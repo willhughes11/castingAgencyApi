@@ -9,7 +9,7 @@ from sqlalchemy.dialects import postgresql
 from flask_migrate import Migrate
 from flask_cors import CORS
 import json
-from auth.auth import AuthError, requires_auth
+from auth import AuthError, requires_auth
 #----------------------------------------------------------------------------#
 # App Config.
 #----------------------------------------------------------------------------#
@@ -25,7 +25,7 @@ CORS(app)
 # Models.
 #----------------------------------------------------------------------------#
 
-from database.models import Movie, Actor, Cast, update, insert, delete
+from models import *
 
 
 #----------------------------------------------------------------------------#
@@ -227,6 +227,18 @@ def delete_movies(jwt,movie_id):
 
 #  Cast
 #  ----------------------------------------------------------------
+
+@app.route('/casts')
+def get_casts():
+  casts = Cast.query.all()
+
+  if len(casts) == 0:
+    abort(404)
+  
+  return jsonify({
+    'success': True,
+    'actors': [cast.cast_short() for cast in casts]
+  })
 
 @app.route('/movie/casts')
 def get_movie_cast():

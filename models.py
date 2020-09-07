@@ -1,4 +1,4 @@
-from ..app import db, json
+from app import db, json
 
 class Movie(db.Model):
     __tablename__ = "movie"
