@@ -25,7 +25,7 @@ CORS(app)
 # Models.
 #----------------------------------------------------------------------------#
 
-from .database.models import Movie, Actor, Cast, update, insert, delete
+from database.models import Movie, Actor, Cast, update, insert, delete
 
 
 #----------------------------------------------------------------------------#
