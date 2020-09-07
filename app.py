@@ -10,7 +10,6 @@ from flask_migrate import Migrate
 from flask_cors import CORS
 import json
 from .auth.auth import AuthError, requires_auth
-
 #----------------------------------------------------------------------------#
 # App Config.
 #----------------------------------------------------------------------------#
