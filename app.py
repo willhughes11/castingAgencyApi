@@ -9,7 +9,7 @@ from sqlalchemy.dialects import postgresql
 from flask_migrate import Migrate
 from flask_cors import CORS
 import json
-from ..auth.auth import AuthError, requires_auth
+from auth.auth import AuthError, requires_auth
 #----------------------------------------------------------------------------#
 # App Config.
 #----------------------------------------------------------------------------#
@@ -25,7 +25,7 @@ CORS(app)
 # Models.
 #----------------------------------------------------------------------------#
 
-from ..database.models import Movie, Actor, Cast, update, insert, delete
+from database.models import Movie, Actor, Cast, update, insert, delete
 
 
 #----------------------------------------------------------------------------#
