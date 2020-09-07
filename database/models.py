@@ -1,4 +1,4 @@
-from ..app import db, app
+from ...castingAgencyApi.app import db, app
 
 class Movie(db.Model):
     __tablename__ = "movie"
