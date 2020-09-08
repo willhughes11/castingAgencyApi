@@ -1,0 +1,1866 @@
+{
+	"info": {
+		"_postman_id": "61fa9aba-e875-431b-a0ba-d64fcb6aa86e",
+		"name": "casting-agency-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "public",
+			"item": [
+				{
+					"name": "/actors",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "18df058d-f041-43cc-bf67-0cab66bfbf7e",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"pm.test(\"value contains actors array\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    pm.expect(jsonData.actors).to.be.an('array')",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://casting-agency-api-wh.herokuapp.com/actors",
+							"protocol": "https",
+							"host": [
+								"casting-agency-api-wh",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"actors"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/movies",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "b278cb08-71ce-4de2-b1c3-4c7418ea7c9c",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"pm.test(\"value contains movies array\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    pm.expect(jsonData.movies).to.be.an('array')",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://casting-agency-api-wh.herokuapp.com/movies",
+							"protocol": "https",
+							"host": [
+								"casting-agency-api-wh",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"movies"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/actor/roles",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "b9f4bb45-9e83-46a1-8d5c-595e3ccca849",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://casting-agency-api-wh.herokuapp.com/actor/roles",
+							"protocol": "https",
+							"host": [
+								"casting-agency-api-wh",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"actor",
+								"roles"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/movie/casts",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "6e17bdb0-2af7-42f5-9665-7c65c923357a",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://casting-agency-api-wh.herokuapp.com/movie/casts",
+							"protocol": "https",
+							"host": [
+								"casting-agency-api-wh",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"movie",
+								"casts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/actor-details",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "2e1ea875-7185-40eb-aabe-9082b8fed5cb",
+								"exec": [
+									"pm.test(\"Status code is 401\", function () {",
+									"    pm.response.to.have.status(401);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://casting-agency-api-wh.herokuapp.com/actor-details",
+							"protocol": "https",
+							"host": [
+								"casting-agency-api-wh",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"actor-details"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/movie-details",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "c32f8f11-8baa-4d9d-a319-7124798975f9",
+								"exec": [
+									"pm.test(\"Status code is 401\", function () {",
+									"    pm.response.to.have.status(401);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://casting-agency-api-wh.herokuapp.com/movie-details",
+							"protocol": "https",
+							"host": [
+								"casting-agency-api-wh",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"movie-details"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/actors",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "58aadbc4-c9a5-4293-891c-27fad44c44a7",
+								"exec": [
+									"pm.test(\"Status code is 401\", function () {",
+									"    pm.response.to.have.status(401);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://casting-agency-api-wh.herokuapp.com/actors",
+							"protocol": "https",
+							"host": [
+								"casting-agency-api-wh",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"actors"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/movies",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "9b44d550-5e76-41e7-8521-99af7f771cab",
+								"exec": [
+									"pm.test(\"Status code is 401\", function () {",
+									"    pm.response.to.have.status(401);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://casting-agency-api-wh.herokuapp.com/movies",
+							"protocol": "https",
+							"host": [
+								"casting-agency-api-wh",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"movies"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/actors/100000",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "7ecbb1d0-9454-4110-9850-b49af329d414",
+								"exec": [
+									"pm.test(\"Status code is 401\", function () {",
+									"    pm.response.to.have.status(401);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "https://casting-agency-api-wh.herokuapp.com/actors/100000",
+							"protocol": "https",
+							"host": [
+								"casting-agency-api-wh",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"actors",
+								"100000"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/movies/100000",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "afb9b484-6618-4c06-9e3a-84d0caf620f8",
+								"exec": [
+									"pm.test(\"Status code is 401\", function () {",
+									"    pm.response.to.have.status(401);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "https://casting-agency-api-wh.herokuapp.com/movies/100000",
+							"protocol": "https",
+							"host": [
+								"casting-agency-api-wh",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"movies",
+								"100000"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/actors/100000",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "061f2f45-213d-4c40-8562-75a1a8a76177",
+								"exec": [
+									"pm.test(\"Status code is 401\", function () {",
+									"    pm.response.to.have.status(401);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://casting-agency-api-wh.herokuapp.com/actors/100000",
+							"protocol": "https",
+							"host": [
+								"casting-agency-api-wh",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"actors",
+								"100000"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/movies/100000",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "c92b7db0-d9c6-445a-8aa9-f2c7375eee30",
+								"exec": [
+									"pm.test(\"Status code is 401\", function () {",
+									"    pm.response.to.have.status(401);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://casting-agency-api-wh.herokuapp.com/movies/100000",
+							"protocol": "https",
+							"host": [
+								"casting-agency-api-wh",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"movies",
+								"100000"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "castingAssistant",
+			"item": [
+				{
+					"name": "/actors",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://casting-agency-api-wh.herokuapp.com/actors",
+							"protocol": "https",
+							"host": [
+								"casting-agency-api-wh",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"actors"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/movies",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://casting-agency-api-wh.herokuapp.com/movies",
+							"protocol": "https",
+							"host": [
+								"casting-agency-api-wh",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"movies"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/actor/roles",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "044f3c4b-88dc-49c1-8105-7e1cc802dd11",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://casting-agency-api-wh.herokuapp.com/actor/roles",
+							"protocol": "https",
+							"host": [
+								"casting-agency-api-wh",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"actor",
+								"roles"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/movie/casts",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "ec9b8767-174c-4683-82a0-38de448815bf",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://casting-agency-api-wh.herokuapp.com/movie/casts",
+							"protocol": "https",
+							"host": [
+								"casting-agency-api-wh",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"movie",
+								"casts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/actor-details",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "b712a490-12b7-4f9a-91d9-fbff57fe24ed",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://casting-agency-api-wh.herokuapp.com/actor-details",
+							"protocol": "https",
+							"host": [
+								"casting-agency-api-wh",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"actor-details"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/movie-details",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "216d231a-dd9b-48f5-be70-31001e0a1d7b",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://casting-agency-api-wh.herokuapp.com/movie-details",
+							"protocol": "https",
+							"host": [
+								"casting-agency-api-wh",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"movie-details"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/actors",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "d941fa08-046a-403e-a16e-40a40b0abc8e",
+								"exec": [
+									"pm.test(\"Status code is 401\", function () {",
+									"    pm.response.to.have.status(401);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\":100000,\n    \"name\": \"Will Hughes\",\n    \"age\": 20,\n    \"gender\": \"M\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://casting-agency-api-wh.herokuapp.com/actors",
+							"protocol": "https",
+							"host": [
+								"casting-agency-api-wh",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"actors"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/movies",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "08659f2b-83a1-4694-a510-c3ec9bcb7638",
+								"exec": [
+									"pm.test(\"Status code is 401\", function () {",
+									"    pm.response.to.have.status(401);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "f9ef4440-a65a-4daf-8c07-1aa36a2e943a",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\":100000,\n    \"title\": \"Will Hughes: The Movie\",\n    \"release_date\": \"02/11/2000\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://casting-agency-api-wh.herokuapp.com/movies",
+							"protocol": "https",
+							"host": [
+								"casting-agency-api-wh",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"movies"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/actors/100000",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "25eb2bef-c6de-4cf8-ba59-6ed26dc28ed4",
+								"exec": [
+									"pm.test(\"Status code is 401\", function () {",
+									"    pm.response.to.have.status(401);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"age\": 21\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://casting-agency-api-wh.herokuapp.com/actors/100000",
+							"protocol": "https",
+							"host": [
+								"casting-agency-api-wh",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"actors",
+								"100000"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/movies/100000",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "04ccd35c-36b6-497c-ad88-7189c0b4fc50",
+								"exec": [
+									"pm.test(\"Status code is 401\", function () {",
+									"    pm.response.to.have.status(401);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"Will Hughes: The Movie II\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://casting-agency-api-wh.herokuapp.com/movies/100000",
+							"protocol": "https",
+							"host": [
+								"casting-agency-api-wh",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"movies",
+								"100000"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/actors/100000",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "cd3a7f74-0203-4907-9162-53fdeb6db01d",
+								"exec": [
+									"pm.test(\"Status code is 401\", function () {",
+									"    pm.response.to.have.status(401);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "172f00cf-df4e-412c-a5ea-3732021a9f06",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://casting-agency-api-wh.herokuapp.com/actors/100000",
+							"protocol": "https",
+							"host": [
+								"casting-agency-api-wh",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"actors",
+								"100000"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/movies/100000",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "b6edc09c-da2a-458a-a688-48527aec0a42",
+								"exec": [
+									"pm.test(\"Status code is 401\", function () {",
+									"    pm.response.to.have.status(401);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://casting-agency-api-wh.herokuapp.com/movies/100000",
+							"protocol": "https",
+							"host": [
+								"casting-agency-api-wh",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"movies",
+								"100000"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6ImhiMXpjazNJTHJfYzN3ajNhbEdodyJ9.eyJpc3MiOiJodHRwczovL2Rldi16Z25oci1mMS51cy5hdXRoMC5jb20vIiwic3ViIjoiYXV0aDB8NWY1NWFjYzc5YzUxMDYwMDZkZTI2OGQ5IiwiYXVkIjoiY2FzdGluZyIsImlhdCI6MTU5OTQ4MTY0MCwiZXhwIjoxNTk5NTY4MDQwLCJhenAiOiJrZ1I0WFFhMG1OMjFqSzA4a1RyMVd3R2RySTI1a2VRWiIsInNjb3BlIjoiIiwicGVybWlzc2lvbnMiOlsiZ2V0OmFjdG9yLWRldGFpbHMiLCJnZXQ6bW92aWUtZGV0YWlscyJdfQ.QO2RCK1O-D8RWJBYS7q877b8tCJPQ1XaMNWOJaSMH8KAmxzkI0enBYGQFlSH8SiFhb8Q8xbf7vpYDCr07sa85eonk3JLGc_CvX5XEKhR9wsJgIAgktiJZJawHwBdWrH2dC5pVmCip18dEkQ6DGZsVcT7s_PSR9rTHZDzkgVwT3_U3BCGd7TFYm0RRtt6QotO7rIbGn6kZvkWUIGgqSeWsMwk8jnk1O4iCa9oFp9buGYHpHDKTuFmAnejc7Mc8jOqBSwRPp4TPQ1lfO6qp6IT-XQBarlRUugOP8t4SIdu0hwN7J9tncQHXfRsBO8R2g8QlbW-0tRR-MS8qT1KQr1s0Q",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "7455d166-1edf-4a41-8225-9f739293c93b",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "049635e6-4083-44d7-8b6f-a8183b866d31",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "castingDirector",
+			"item": [
+				{
+					"name": "/actors",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://casting-agency-api-wh.herokuapp.com/actors",
+							"protocol": "https",
+							"host": [
+								"casting-agency-api-wh",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"actors"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/movies",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://casting-agency-api-wh.herokuapp.com/movies",
+							"protocol": "https",
+							"host": [
+								"casting-agency-api-wh",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"movies"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/actor/roles",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "c5132c95-a5d4-4d66-80cc-9faf28322d8e",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://casting-agency-api-wh.herokuapp.com/actor/roles",
+							"protocol": "https",
+							"host": [
+								"casting-agency-api-wh",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"actor",
+								"roles"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/movie/casts",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "8bb21bdb-48e0-4423-9094-6776d06ab4cb",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://casting-agency-api-wh.herokuapp.com/movie/casts",
+							"protocol": "https",
+							"host": [
+								"casting-agency-api-wh",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"movie",
+								"casts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/actor-details",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "75c197c4-6c82-4755-94a7-ecb9201d9a63",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://casting-agency-api-wh.herokuapp.com/actor-details",
+							"protocol": "https",
+							"host": [
+								"casting-agency-api-wh",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"actor-details"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/movie-details",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "bf3077db-9ea6-4c66-a769-b64c2ca60ced",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://casting-agency-api-wh.herokuapp.com/movie-details",
+							"protocol": "https",
+							"host": [
+								"casting-agency-api-wh",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"movie-details"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/actors",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "44686318-d2ab-4a54-ae22-5fbb77e19166",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\":100000,\n    \"name\": \"Will Hughes\",\n    \"age\": 20,\n    \"gender\": \"M\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://casting-agency-api-wh.herokuapp.com/actors",
+							"protocol": "https",
+							"host": [
+								"casting-agency-api-wh",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"actors"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/movies",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "c8e55e64-02a7-4729-84c3-a818fb6fe21e",
+								"exec": [
+									"pm.test(\"Status code is 401\", function () {",
+									"    pm.response.to.have.status(401);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "72c7cc45-465b-4560-95f8-4e55389a9051",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\":100000,\n    \"title\": \"Will Hughes: The Movie\",\n    \"release_date\": \"02/11/2000\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://casting-agency-api-wh.herokuapp.com/movies",
+							"protocol": "https",
+							"host": [
+								"casting-agency-api-wh",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"movies"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/actors/100000",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "c04f00d3-c7f3-4905-94a7-aa45a54cf7d3",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"age\": 21\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://casting-agency-api-wh.herokuapp.com/actors/100000",
+							"protocol": "https",
+							"host": [
+								"casting-agency-api-wh",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"actors",
+								"100000"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/movies/1",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "7253e372-3c00-47d8-b0f1-5f4481c60c98",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"Black Panther\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://casting-agency-api-wh.herokuapp.com/movies/1",
+							"protocol": "https",
+							"host": [
+								"casting-agency-api-wh",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"movies",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/actors/100000",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "c8421d72-f1ff-41cd-beb3-eb0278895466",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "fa1c9a88-71c3-4d2e-91d4-a35042f002e9",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://casting-agency-api-wh.herokuapp.com/actors/100000",
+							"protocol": "https",
+							"host": [
+								"casting-agency-api-wh",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"actors",
+								"100000"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/movies/100000",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "01d8d58e-fc26-4655-ad2e-8e00694aac5c",
+								"exec": [
+									"pm.test(\"Status code is 401\", function () {",
+									"    pm.response.to.have.status(401);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://casting-agency-api-wh.herokuapp.com/movies/100000",
+							"protocol": "https",
+							"host": [
+								"casting-agency-api-wh",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"movies",
+								"100000"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6ImhiMXpjazNJTHJfYzN3ajNhbEdodyJ9.eyJpc3MiOiJodHRwczovL2Rldi16Z25oci1mMS51cy5hdXRoMC5jb20vIiwic3ViIjoiYXV0aDB8NWY1NWFkM2IyMDc2YTcwMDY3OGZiOTY2IiwiYXVkIjoiY2FzdGluZyIsImlhdCI6MTU5OTQ4MTc1OSwiZXhwIjoxNTk5NTY4MTU5LCJhenAiOiJrZ1I0WFFhMG1OMjFqSzA4a1RyMVd3R2RySTI1a2VRWiIsInNjb3BlIjoiIiwicGVybWlzc2lvbnMiOlsiZGVsZXRlOmFjdG9ycyIsImdldDphY3Rvci1kZXRhaWxzIiwiZ2V0Om1vdmllLWRldGFpbHMiLCJwYXRjaDphY3RvcnMiLCJwYXRjaDptb3ZpZXMiLCJwb3N0OmFjdG9ycyJdfQ.IFp0oA0IGWhe0yicygjzC4DfMsVchCHibEMKr9Wxji1-attQ2tcpMiDYeAsipW7bblVOrbqJMnaS647mPx43eQKkHWar8V3rMBYk937sY1EaBItjP6N5WqSV-5tN_va1Ym0RWWUx5YX-99qZcM_ktiG7elzzloeNEHzJJt_cAXBllm16rWbkPLTDxqFrMjR8MrrJS6n2diwyYaVwhFVhYurA6GkS4wviMXYkNtNEV4tC0IHWNoOw4k4nezRhIe77kjxH3exQyF9OWCkqrrz0Aagb-2p3BY14IPtkQw8s5VoplyX1o2xT5hOyfwOGGzmoP6Gtfa2QWuW6nz3fF1N0EQ",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "6ae2e3e8-a0b1-4f9c-abfd-41b077aa500f",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "f104ecb4-50ef-44d8-8c06-14af0e6af186",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "executiveProducer",
+			"item": [
+				{
+					"name": "/actors",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://casting-agency-api-wh.herokuapp.com/actors",
+							"protocol": "https",
+							"host": [
+								"casting-agency-api-wh",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"actors"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/movies",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://casting-agency-api-wh.herokuapp.com/movies",
+							"protocol": "https",
+							"host": [
+								"casting-agency-api-wh",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"movies"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/actor/roles",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "85dbbc9a-ae69-46a7-be71-186b3fdc8548",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://casting-agency-api-wh.herokuapp.com/actor/roles",
+							"protocol": "https",
+							"host": [
+								"casting-agency-api-wh",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"actor",
+								"roles"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/movie/casts",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "a4295f19-adaa-4799-8acb-5650618f01f2",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://casting-agency-api-wh.herokuapp.com/movie/casts",
+							"protocol": "https",
+							"host": [
+								"casting-agency-api-wh",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"movie",
+								"casts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/actor-details",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "54aa91dc-a823-4ab9-8aad-57dbd00957c7",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://casting-agency-api-wh.herokuapp.com/actor-details",
+							"protocol": "https",
+							"host": [
+								"casting-agency-api-wh",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"actor-details"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/movie-details",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "e0469f92-5b7c-4c80-af00-7b798d9d176d",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://casting-agency-api-wh.herokuapp.com/movie-details",
+							"protocol": "https",
+							"host": [
+								"casting-agency-api-wh",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"movie-details"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/actors",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "b2848ead-5e7b-468a-b391-35ccabe48b4f",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\":100000,\n    \"name\": \"Will Hughes\",\n    \"age\": 20,\n    \"gender\": \"M\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://casting-agency-api-wh.herokuapp.com/actors",
+							"protocol": "https",
+							"host": [
+								"casting-agency-api-wh",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"actors"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/movies",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "0eafa3ad-5323-48c8-918b-0f4eb9204d0e",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\":100000,\n    \"title\": \"Will Hughes: The Movie\",\n    \"release_date\": \"02/11/2000\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://casting-agency-api-wh.herokuapp.com/movies",
+							"protocol": "https",
+							"host": [
+								"casting-agency-api-wh",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"movies"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/actors/100000",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "eb52cfa9-7373-4228-8ca9-f722841fff22",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"age\": 21\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://casting-agency-api-wh.herokuapp.com/actors/100000",
+							"protocol": "https",
+							"host": [
+								"casting-agency-api-wh",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"actors",
+								"100000"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/movies/100000",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "39e08d89-ebf7-4fee-be94-5ea6d206881c",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"Will Hughes: The Movie II\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://casting-agency-api-wh.herokuapp.com/movies/100000",
+							"protocol": "https",
+							"host": [
+								"casting-agency-api-wh",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"movies",
+								"100000"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/actors/100000",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "dc87ee84-6e8c-459e-949c-23eb23a26ac0",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://casting-agency-api-wh.herokuapp.com/actors/100000",
+							"protocol": "https",
+							"host": [
+								"casting-agency-api-wh",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"actors",
+								"100000"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/movies/100000",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "c7265a2e-fda5-4eb6-9c2c-606cb17df862",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://casting-agency-api-wh.herokuapp.com/movies/100000",
+							"protocol": "https",
+							"host": [
+								"casting-agency-api-wh",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"movies",
+								"100000"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6ImhiMXpjazNJTHJfYzN3ajNhbEdodyJ9.eyJpc3MiOiJodHRwczovL2Rldi16Z25oci1mMS51cy5hdXRoMC5jb20vIiwic3ViIjoiYXV0aDB8NWY1NWFkNzNjNjQ3OGIwMDY3ZDk0NDU2IiwiYXVkIjoiY2FzdGluZyIsImlhdCI6MTU5OTQ4MTgzNCwiZXhwIjoxNTk5NTY4MjM0LCJhenAiOiJrZ1I0WFFhMG1OMjFqSzA4a1RyMVd3R2RySTI1a2VRWiIsInNjb3BlIjoiIiwicGVybWlzc2lvbnMiOlsiZGVsZXRlOmFjdG9ycyIsImRlbGV0ZTptb3ZpZXMiLCJnZXQ6YWN0b3ItZGV0YWlscyIsImdldDptb3ZpZS1kZXRhaWxzIiwicGF0Y2g6YWN0b3JzIiwicGF0Y2g6bW92aWVzIiwicG9zdDphY3RvcnMiLCJwb3N0Om1vdmllcyJdfQ.AGjo-qwGguvqn8LSa2cP99jcmcAWj4j5vWSpSTJVGtSn5mbQUIvDgOEML4JxxhBe_7NKywWUXkOkqz19FXd3Nmu46UGcITjIfRMhuZsLOdoa815U2RQFjpDewlyyjSDnUvXOF4LSc1nZsJw3106kNz-apLhtZ_i78wvrPkUiMBArADYOPavFNY0YhT96Bt4VfP-SqIAWcDzSfNTL1L4E09ISJN9IBWSkqDG-VKh1M1HV0bp4E-kHKIovOuschD2oYGFzEhfDZLPl4o_G9fiF2VEP1I4Ne8XeGwznnaFtAk7WQ20AVj0uYxRlj-GVRRoYkByCeJiNazClmSlwIod69g",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "fa2f0cea-0d24-46e2-b4e1-bfab153fff6e",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "63de3f88-9445-4781-84e9-48bc669832a9",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
