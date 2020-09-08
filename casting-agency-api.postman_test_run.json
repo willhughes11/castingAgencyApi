@@ -1,7 +1,7 @@
 {
-	"id": "ffaf7784-1a6e-4f52-bd42-0cf8c29f2f49",
+	"id": "ab42e1a9-51e7-45a1-9463-4082805f4848",
 	"name": "casting-agency-api",
-	"timestamp": "2020-09-07T23:54:40.633Z",
+	"timestamp": "2020-09-08T01:58:50.336Z",
 	"collection_id": "61fa9aba-e875-431b-a0ba-d64fcb6aa86e",
 	"folder_id": 0,
 	"environment_id": "0",
@@ -12,7 +12,7 @@
 			"id": "b07bc20b-066f-454a-b3a6-c917106c59f9",
 			"name": "/actors",
 			"url": "https://casting-agency-api-wh.herokuapp.com/actors",
-			"time": 130,
+			"time": 133,
 			"responseCode": {
 				"code": 200,
 				"name": "OK"
@@ -32,7 +32,7 @@
 				}
 			},
 			"times": [
-				130
+				133
 			],
 			"allTests": [
 				{
@@ -45,7 +45,7 @@
 			"id": "db9132c6-c130-4ced-ab11-3f0380ef3e4e",
 			"name": "/movies",
 			"url": "https://casting-agency-api-wh.herokuapp.com/movies",
-			"time": 37,
+			"time": 34,
 			"responseCode": {
 				"code": 200,
 				"name": "OK"
@@ -65,7 +65,7 @@
 				}
 			},
 			"times": [
-				37
+				34
 			],
 			"allTests": [
 				{
@@ -78,7 +78,7 @@
 			"id": "a78d35d1-930d-4708-9ec9-062a4073a1f2",
 			"name": "/actor/roles",
 			"url": "https://casting-agency-api-wh.herokuapp.com/actor/roles",
-			"time": 32,
+			"time": 31,
 			"responseCode": {
 				"code": 200,
 				"name": "OK"
@@ -93,7 +93,7 @@
 				}
 			},
 			"times": [
-				32
+				31
 			],
 			"allTests": [
 				{
@@ -105,7 +105,7 @@
 			"id": "d1b2a344-4fe7-4a4e-93df-30ed2ca558c0",
 			"name": "/movie/casts",
 			"url": "https://casting-agency-api-wh.herokuapp.com/movie/casts",
-			"time": 35,
+			"time": 30,
 			"responseCode": {
 				"code": 200,
 				"name": "OK"
@@ -120,7 +120,7 @@
 				}
 			},
 			"times": [
-				35
+				30
 			],
 			"allTests": [
 				{
@@ -132,7 +132,7 @@
 			"id": "ce2ac749-c799-44f7-bf4e-b516571b5233",
 			"name": "/actor-details",
 			"url": "https://casting-agency-api-wh.herokuapp.com/actor-details",
-			"time": 33,
+			"time": 27,
 			"responseCode": {
 				"code": 401,
 				"name": "UNAUTHORIZED"
@@ -147,7 +147,7 @@
 				}
 			},
 			"times": [
-				33
+				27
 			],
 			"allTests": [
 				{
@@ -159,7 +159,7 @@
 			"id": "6ce7f137-a0d4-4bd1-82c1-b6750eb4f980",
 			"name": "/movie-details",
 			"url": "https://casting-agency-api-wh.herokuapp.com/movie-details",
-			"time": 31,
+			"time": 27,
 			"responseCode": {
 				"code": 401,
 				"name": "UNAUTHORIZED"
@@ -174,7 +174,7 @@
 				}
 			},
 			"times": [
-				31
+				27
 			],
 			"allTests": [
 				{
@@ -186,7 +186,7 @@
 			"id": "61b20876-db25-4f11-9529-b470a1fc9e0d",
 			"name": "/actors",
 			"url": "https://casting-agency-api-wh.herokuapp.com/actors",
-			"time": 30,
+			"time": 27,
 			"responseCode": {
 				"code": 401,
 				"name": "UNAUTHORIZED"
@@ -201,7 +201,7 @@
 				}
 			},
 			"times": [
-				30
+				27
 			],
 			"allTests": [
 				{
@@ -213,7 +213,7 @@
 			"id": "6ba15c77-5a18-444d-9eb8-f2993bf979d9",
 			"name": "/movies",
 			"url": "https://casting-agency-api-wh.herokuapp.com/movies",
-			"time": 35,
+			"time": 27,
 			"responseCode": {
 				"code": 401,
 				"name": "UNAUTHORIZED"
@@ -228,7 +228,7 @@
 				}
 			},
 			"times": [
-				35
+				27
 			],
 			"allTests": [
 				{
@@ -240,7 +240,7 @@
 			"id": "fe64d2a6-155d-489a-95d8-6c610a8d7cba",
 			"name": "/actors/100000",
 			"url": "https://casting-agency-api-wh.herokuapp.com/actors/100000",
-			"time": 28,
+			"time": 29,
 			"responseCode": {
 				"code": 401,
 				"name": "UNAUTHORIZED"
@@ -255,7 +255,7 @@
 				}
 			},
 			"times": [
-				28
+				29
 			],
 			"allTests": [
 				{
@@ -294,7 +294,7 @@
 			"id": "f057d26c-7f4f-4863-a463-69597077d64e",
 			"name": "/actors/100000",
 			"url": "https://casting-agency-api-wh.herokuapp.com/actors/100000",
-			"time": 66,
+			"time": 29,
 			"responseCode": {
 				"code": 401,
 				"name": "UNAUTHORIZED"
@@ -309,7 +309,7 @@
 				}
 			},
 			"times": [
-				66
+				29
 			],
 			"allTests": [
 				{
@@ -321,7 +321,7 @@
 			"id": "746c12fc-71ce-4ac4-afa1-a4190e7aff38",
 			"name": "/movies/100000",
 			"url": "https://casting-agency-api-wh.herokuapp.com/movies/100000",
-			"time": 28,
+			"time": 30,
 			"responseCode": {
 				"code": 401,
 				"name": "UNAUTHORIZED"
@@ -336,7 +336,7 @@
 				}
 			},
 			"times": [
-				28
+				30
 			],
 			"allTests": [
 				{
@@ -348,7 +348,7 @@
 			"id": "e6bbae9a-dbc2-4809-9bdc-1fb18f227a93",
 			"name": "/actors",
 			"url": "https://casting-agency-api-wh.herokuapp.com/actors",
-			"time": 34,
+			"time": 35,
 			"responseCode": {
 				"code": 200,
 				"name": "OK"
@@ -356,7 +356,7 @@
 			"tests": {},
 			"testPassFailCounts": {},
 			"times": [
-				34
+				35
 			],
 			"allTests": [
 				{}
@@ -366,7 +366,7 @@
 			"id": "4be269a4-cb42-4379-b99d-ce441755e9a9",
 			"name": "/movies",
 			"url": "https://casting-agency-api-wh.herokuapp.com/movies",
-			"time": 37,
+			"time": 33,
 			"responseCode": {
 				"code": 200,
 				"name": "OK"
@@ -374,7 +374,7 @@
 			"tests": {},
 			"testPassFailCounts": {},
 			"times": [
-				37
+				33
 			],
 			"allTests": [
 				{}
@@ -438,7 +438,7 @@
 			"id": "1bd0c664-43cd-4d05-aa11-5f9fc52b60b1",
 			"name": "/actor-details",
 			"url": "https://casting-agency-api-wh.herokuapp.com/actor-details",
-			"time": 139,
+			"time": 127,
 			"responseCode": {
 				"code": 200,
 				"name": "OK"
@@ -453,7 +453,7 @@
 				}
 			},
 			"times": [
-				139
+				127
 			],
 			"allTests": [
 				{
@@ -465,7 +465,7 @@
 			"id": "e3e9039c-ba24-45cb-8407-769daa73f2c6",
 			"name": "/movie-details",
 			"url": "https://casting-agency-api-wh.herokuapp.com/movie-details",
-			"time": 174,
+			"time": 123,
 			"responseCode": {
 				"code": 200,
 				"name": "OK"
@@ -480,7 +480,7 @@
 				}
 			},
 			"times": [
-				174
+				123
 			],
 			"allTests": [
 				{
@@ -492,7 +492,7 @@
 			"id": "4b0bc1b1-50dd-4445-8529-f4af737b65f0",
 			"name": "/actors",
 			"url": "https://casting-agency-api-wh.herokuapp.com/actors",
-			"time": 106,
+			"time": 91,
 			"responseCode": {
 				"code": 401,
 				"name": "UNAUTHORIZED"
@@ -507,7 +507,7 @@
 				}
 			},
 			"times": [
-				106
+				91
 			],
 			"allTests": [
 				{
@@ -519,7 +519,7 @@
 			"id": "f3421c63-9e94-4651-b2a6-0bdd1717e9a0",
 			"name": "/movies",
 			"url": "https://casting-agency-api-wh.herokuapp.com/movies",
-			"time": 461,
+			"time": 543,
 			"responseCode": {
 				"code": 401,
 				"name": "UNAUTHORIZED"
@@ -534,7 +534,7 @@
 				}
 			},
 			"times": [
-				461
+				543
 			],
 			"allTests": [
 				{
@@ -546,7 +546,7 @@
 			"id": "cf0ae04b-94b8-4507-8abd-370453ef1e62",
 			"name": "/actors/100000",
 			"url": "https://casting-agency-api-wh.herokuapp.com/actors/100000",
-			"time": 87,
+			"time": 976,
 			"responseCode": {
 				"code": 401,
 				"name": "UNAUTHORIZED"
@@ -561,7 +561,7 @@
 				}
 			},
 			"times": [
-				87
+				976
 			],
 			"allTests": [
 				{
@@ -573,7 +573,7 @@
 			"id": "e16265d2-abca-407f-88ba-ad31ffa61ef5",
 			"name": "/movies/100000",
 			"url": "https://casting-agency-api-wh.herokuapp.com/movies/100000",
-			"time": 1036,
+			"time": 1181,
 			"responseCode": {
 				"code": 401,
 				"name": "UNAUTHORIZED"
@@ -588,7 +588,7 @@
 				}
 			},
 			"times": [
-				1036
+				1181
 			],
 			"allTests": [
 				{
@@ -600,7 +600,7 @@
 			"id": "e30eccfe-fbb6-407b-9936-31e46eeb7388",
 			"name": "/actors/100000",
 			"url": "https://casting-agency-api-wh.herokuapp.com/actors/100000",
-			"time": 84,
+			"time": 922,
 			"responseCode": {
 				"code": 401,
 				"name": "UNAUTHORIZED"
@@ -615,7 +615,7 @@
 				}
 			},
 			"times": [
-				84
+				922
 			],
 			"allTests": [
 				{
@@ -627,7 +627,7 @@
 			"id": "532c04c5-168d-42de-b03d-502bf75c9b10",
 			"name": "/movies/100000",
 			"url": "https://casting-agency-api-wh.herokuapp.com/movies/100000",
-			"time": 95,
+			"time": 96,
 			"responseCode": {
 				"code": 401,
 				"name": "UNAUTHORIZED"
@@ -642,7 +642,7 @@
 				}
 			},
 			"times": [
-				95
+				96
 			],
 			"allTests": [
 				{
@@ -672,6 +672,294 @@
 			"id": "655b2297-f3d9-4db6-8a04-8e476c913c03",
 			"name": "/movies",
 			"url": "https://casting-agency-api-wh.herokuapp.com/movies",
+			"time": 87,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				87
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "d9db24ab-1723-490f-a64a-6a08dc93aff7",
+			"name": "/actor/roles",
+			"url": "https://casting-agency-api-wh.herokuapp.com/actor/roles",
+			"time": 37,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				37
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "0b4bb5fb-c13e-4c34-90c9-b0b075c5e4a7",
+			"name": "/movie/casts",
+			"url": "https://casting-agency-api-wh.herokuapp.com/movie/casts",
+			"time": 31,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				31
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "56b93d5b-2e60-4bc1-bdf1-a4aee6b70e81",
+			"name": "/actor-details",
+			"url": "https://casting-agency-api-wh.herokuapp.com/actor-details",
+			"time": 142,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				142
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "2f5187cc-c48d-421c-998c-b8a364b40bc1",
+			"name": "/movie-details",
+			"url": "https://casting-agency-api-wh.herokuapp.com/movie-details",
+			"time": 1073,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1073
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "c15f43f2-44fc-494f-aad6-5487af4237a0",
+			"name": "/actors",
+			"url": "https://casting-agency-api-wh.herokuapp.com/actors",
+			"time": 108,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				108
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "f9ca03ac-2b06-4fb1-9c4e-6c24cd7e8d86",
+			"name": "/movies",
+			"url": "https://casting-agency-api-wh.herokuapp.com/movies",
+			"time": 1049,
+			"responseCode": {
+				"code": 401,
+				"name": "UNAUTHORIZED"
+			},
+			"tests": {
+				"Status code is 401": true
+			},
+			"testPassFailCounts": {
+				"Status code is 401": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1049
+			],
+			"allTests": [
+				{
+					"Status code is 401": true
+				}
+			]
+		},
+		{
+			"id": "a2272295-daa6-4a2f-a7bd-88f9d12e580f",
+			"name": "/actors/100000",
+			"url": "https://casting-agency-api-wh.herokuapp.com/actors/100000",
+			"time": 119,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				119
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "75c655a7-48c0-4881-81ac-e23718887142",
+			"name": "/movies/1",
+			"url": "https://casting-agency-api-wh.herokuapp.com/movies/1",
+			"time": 1037,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1037
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "198b2dbf-20bc-43de-86f8-a16183756445",
+			"name": "/actors/100000",
+			"url": "https://casting-agency-api-wh.herokuapp.com/actors/100000",
+			"time": 107,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				107
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "c4f8cc80-b67b-4879-8dc5-6435c018e37a",
+			"name": "/movies/100000",
+			"url": "https://casting-agency-api-wh.herokuapp.com/movies/100000",
+			"time": 1121,
+			"responseCode": {
+				"code": 401,
+				"name": "UNAUTHORIZED"
+			},
+			"tests": {
+				"Status code is 401": true
+			},
+			"testPassFailCounts": {
+				"Status code is 401": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1121
+			],
+			"allTests": [
+				{
+					"Status code is 401": true
+				}
+			]
+		},
+		{
+			"id": "4b71cfe2-fb18-4d27-bf28-c777a2198fd1",
+			"name": "/actors",
+			"url": "https://casting-agency-api-wh.herokuapp.com/actors",
 			"time": 33,
 			"responseCode": {
 				"code": 200,
@@ -687,298 +975,10 @@
 			]
 		},
 		{
-			"id": "d9db24ab-1723-490f-a64a-6a08dc93aff7",
-			"name": "/actor/roles",
-			"url": "https://casting-agency-api-wh.herokuapp.com/actor/roles",
-			"time": 39,
-			"responseCode": {
-				"code": 200,
-				"name": "OK"
-			},
-			"tests": {
-				"Status code is 200": true
-			},
-			"testPassFailCounts": {
-				"Status code is 200": {
-					"pass": 1,
-					"fail": 0
-				}
-			},
-			"times": [
-				39
-			],
-			"allTests": [
-				{
-					"Status code is 200": true
-				}
-			]
-		},
-		{
-			"id": "0b4bb5fb-c13e-4c34-90c9-b0b075c5e4a7",
-			"name": "/movie/casts",
-			"url": "https://casting-agency-api-wh.herokuapp.com/movie/casts",
-			"time": 39,
-			"responseCode": {
-				"code": 200,
-				"name": "OK"
-			},
-			"tests": {
-				"Status code is 200": true
-			},
-			"testPassFailCounts": {
-				"Status code is 200": {
-					"pass": 1,
-					"fail": 0
-				}
-			},
-			"times": [
-				39
-			],
-			"allTests": [
-				{
-					"Status code is 200": true
-				}
-			]
-		},
-		{
-			"id": "56b93d5b-2e60-4bc1-bdf1-a4aee6b70e81",
-			"name": "/actor-details",
-			"url": "https://casting-agency-api-wh.herokuapp.com/actor-details",
-			"time": 123,
-			"responseCode": {
-				"code": 200,
-				"name": "OK"
-			},
-			"tests": {
-				"Status code is 200": true
-			},
-			"testPassFailCounts": {
-				"Status code is 200": {
-					"pass": 1,
-					"fail": 0
-				}
-			},
-			"times": [
-				123
-			],
-			"allTests": [
-				{
-					"Status code is 200": true
-				}
-			]
-		},
-		{
-			"id": "2f5187cc-c48d-421c-998c-b8a364b40bc1",
-			"name": "/movie-details",
-			"url": "https://casting-agency-api-wh.herokuapp.com/movie-details",
-			"time": 100,
-			"responseCode": {
-				"code": 200,
-				"name": "OK"
-			},
-			"tests": {
-				"Status code is 200": true
-			},
-			"testPassFailCounts": {
-				"Status code is 200": {
-					"pass": 1,
-					"fail": 0
-				}
-			},
-			"times": [
-				100
-			],
-			"allTests": [
-				{
-					"Status code is 200": true
-				}
-			]
-		},
-		{
-			"id": "c15f43f2-44fc-494f-aad6-5487af4237a0",
-			"name": "/actors",
-			"url": "https://casting-agency-api-wh.herokuapp.com/actors",
-			"time": 103,
-			"responseCode": {
-				"code": 200,
-				"name": "OK"
-			},
-			"tests": {
-				"Status code is 200": true
-			},
-			"testPassFailCounts": {
-				"Status code is 200": {
-					"pass": 1,
-					"fail": 0
-				}
-			},
-			"times": [
-				103
-			],
-			"allTests": [
-				{
-					"Status code is 200": true
-				}
-			]
-		},
-		{
-			"id": "f9ca03ac-2b06-4fb1-9c4e-6c24cd7e8d86",
-			"name": "/movies",
-			"url": "https://casting-agency-api-wh.herokuapp.com/movies",
-			"time": 123,
-			"responseCode": {
-				"code": 401,
-				"name": "UNAUTHORIZED"
-			},
-			"tests": {
-				"Status code is 401": true
-			},
-			"testPassFailCounts": {
-				"Status code is 401": {
-					"pass": 1,
-					"fail": 0
-				}
-			},
-			"times": [
-				123
-			],
-			"allTests": [
-				{
-					"Status code is 401": true
-				}
-			]
-		},
-		{
-			"id": "a2272295-daa6-4a2f-a7bd-88f9d12e580f",
-			"name": "/actors/100000",
-			"url": "https://casting-agency-api-wh.herokuapp.com/actors/100000",
-			"time": 104,
-			"responseCode": {
-				"code": 200,
-				"name": "OK"
-			},
-			"tests": {
-				"Status code is 200": true
-			},
-			"testPassFailCounts": {
-				"Status code is 200": {
-					"pass": 1,
-					"fail": 0
-				}
-			},
-			"times": [
-				104
-			],
-			"allTests": [
-				{
-					"Status code is 200": true
-				}
-			]
-		},
-		{
-			"id": "75c655a7-48c0-4881-81ac-e23718887142",
-			"name": "/movies/1",
-			"url": "https://casting-agency-api-wh.herokuapp.com/movies/1",
-			"time": 532,
-			"responseCode": {
-				"code": 200,
-				"name": "OK"
-			},
-			"tests": {
-				"Status code is 200": true
-			},
-			"testPassFailCounts": {
-				"Status code is 200": {
-					"pass": 1,
-					"fail": 0
-				}
-			},
-			"times": [
-				532
-			],
-			"allTests": [
-				{
-					"Status code is 200": true
-				}
-			]
-		},
-		{
-			"id": "198b2dbf-20bc-43de-86f8-a16183756445",
-			"name": "/actors/100000",
-			"url": "https://casting-agency-api-wh.herokuapp.com/actors/100000",
-			"time": 106,
-			"responseCode": {
-				"code": 200,
-				"name": "OK"
-			},
-			"tests": {
-				"Status code is 200": true
-			},
-			"testPassFailCounts": {
-				"Status code is 200": {
-					"pass": 1,
-					"fail": 0
-				}
-			},
-			"times": [
-				106
-			],
-			"allTests": [
-				{
-					"Status code is 200": true
-				}
-			]
-		},
-		{
-			"id": "c4f8cc80-b67b-4879-8dc5-6435c018e37a",
-			"name": "/movies/100000",
-			"url": "https://casting-agency-api-wh.herokuapp.com/movies/100000",
-			"time": 1027,
-			"responseCode": {
-				"code": 401,
-				"name": "UNAUTHORIZED"
-			},
-			"tests": {
-				"Status code is 401": true
-			},
-			"testPassFailCounts": {
-				"Status code is 401": {
-					"pass": 1,
-					"fail": 0
-				}
-			},
-			"times": [
-				1027
-			],
-			"allTests": [
-				{
-					"Status code is 401": true
-				}
-			]
-		},
-		{
-			"id": "4b71cfe2-fb18-4d27-bf28-c777a2198fd1",
-			"name": "/actors",
-			"url": "https://casting-agency-api-wh.herokuapp.com/actors",
-			"time": 630,
-			"responseCode": {
-				"code": 200,
-				"name": "OK"
-			},
-			"tests": {},
-			"testPassFailCounts": {},
-			"times": [
-				630
-			],
-			"allTests": [
-				{}
-			]
-		},
-		{
 			"id": "606df890-ae9e-4853-ab88-5f995145049f",
 			"name": "/movies",
 			"url": "https://casting-agency-api-wh.herokuapp.com/movies",
-			"time": 39,
+			"time": 37,
 			"responseCode": {
 				"code": 200,
 				"name": "OK"
@@ -986,7 +986,7 @@
 			"tests": {},
 			"testPassFailCounts": {},
 			"times": [
-				39
+				37
 			],
 			"allTests": [
 				{}
@@ -996,7 +996,7 @@
 			"id": "e691f64d-f276-41ca-b548-74f0fc613329",
 			"name": "/actor/roles",
 			"url": "https://casting-agency-api-wh.herokuapp.com/actor/roles",
-			"time": 38,
+			"time": 39,
 			"responseCode": {
 				"code": 200,
 				"name": "OK"
@@ -1011,7 +1011,7 @@
 				}
 			},
 			"times": [
-				38
+				39
 			],
 			"allTests": [
 				{
@@ -1023,7 +1023,7 @@
 			"id": "9d224018-4820-403d-bc61-1c16c6568220",
 			"name": "/movie/casts",
 			"url": "https://casting-agency-api-wh.herokuapp.com/movie/casts",
-			"time": 32,
+			"time": 40,
 			"responseCode": {
 				"code": 200,
 				"name": "OK"
@@ -1038,7 +1038,7 @@
 				}
 			},
 			"times": [
-				32
+				40
 			],
 			"allTests": [
 				{
@@ -1050,7 +1050,7 @@
 			"id": "4caa0a95-f631-4925-9186-8de0ac371ee1",
 			"name": "/actor-details",
 			"url": "https://casting-agency-api-wh.herokuapp.com/actor-details",
-			"time": 1072,
+			"time": 102,
 			"responseCode": {
 				"code": 200,
 				"name": "OK"
@@ -1065,7 +1065,7 @@
 				}
 			},
 			"times": [
-				1072
+				102
 			],
 			"allTests": [
 				{
@@ -1077,7 +1077,7 @@
 			"id": "619334fa-d4b9-4aa4-8088-395292670043",
 			"name": "/movie-details",
 			"url": "https://casting-agency-api-wh.herokuapp.com/movie-details",
-			"time": 112,
+			"time": 102,
 			"responseCode": {
 				"code": 200,
 				"name": "OK"
@@ -1092,7 +1092,7 @@
 				}
 			},
 			"times": [
-				112
+				102
 			],
 			"allTests": [
 				{
@@ -1104,7 +1104,7 @@
 			"id": "0c384294-7f11-45dc-b18c-13c5ec798500",
 			"name": "/actors",
 			"url": "https://casting-agency-api-wh.herokuapp.com/actors",
-			"time": 152,
+			"time": 122,
 			"responseCode": {
 				"code": 200,
 				"name": "OK"
@@ -1119,7 +1119,7 @@
 				}
 			},
 			"times": [
-				152
+				122
 			],
 			"allTests": [
 				{
@@ -1131,7 +1131,7 @@
 			"id": "3b0a8de3-ce6b-4823-91fe-9a23bbfef67c",
 			"name": "/movies",
 			"url": "https://casting-agency-api-wh.herokuapp.com/movies",
-			"time": 121,
+			"time": 165,
 			"responseCode": {
 				"code": 200,
 				"name": "OK"
@@ -1146,7 +1146,7 @@
 				}
 			},
 			"times": [
-				121
+				165
 			],
 			"allTests": [
 				{
@@ -1158,7 +1158,7 @@
 			"id": "955be408-228d-4444-96f1-284ffbb27040",
 			"name": "/actors/100000",
 			"url": "https://casting-agency-api-wh.herokuapp.com/actors/100000",
-			"time": 684,
+			"time": 108,
 			"responseCode": {
 				"code": 200,
 				"name": "OK"
@@ -1173,7 +1173,7 @@
 				}
 			},
 			"times": [
-				684
+				108
 			],
 			"allTests": [
 				{
@@ -1185,7 +1185,7 @@
 			"id": "c6df1889-5751-4699-9aa6-39622719632a",
 			"name": "/movies/100000",
 			"url": "https://casting-agency-api-wh.herokuapp.com/movies/100000",
-			"time": 96,
+			"time": 1062,
 			"responseCode": {
 				"code": 200,
 				"name": "OK"
@@ -1200,7 +1200,7 @@
 				}
 			},
 			"times": [
-				96
+				1062
 			],
 			"allTests": [
 				{
@@ -1212,7 +1212,7 @@
 			"id": "ef2754ab-eba4-4435-8316-a3f71426c448",
 			"name": "/actors/100000",
 			"url": "https://casting-agency-api-wh.herokuapp.com/actors/100000",
-			"time": 246,
+			"time": 1028,
 			"responseCode": {
 				"code": 200,
 				"name": "OK"
@@ -1227,7 +1227,7 @@
 				}
 			},
 			"times": [
-				246
+				1028
 			],
 			"allTests": [
 				{
@@ -1239,7 +1239,7 @@
 			"id": "3ea4ff30-2f66-43de-a4bd-af6d26557a55",
 			"name": "/movies/100000",
 			"url": "https://casting-agency-api-wh.herokuapp.com/movies/100000",
-			"time": 125,
+			"time": 1081,
 			"responseCode": {
 				"code": 200,
 				"name": "OK"
@@ -1254,7 +1254,7 @@
 				}
 			},
 			"times": [
-				125
+				1081
 			],
 			"allTests": [
 				{
@@ -1264,7 +1264,7 @@
 		}
 	],
 	"count": 1,
-	"totalTime": 8543,
+	"totalTime": 13510,
 	"collection": {
 		"requests": [
 			{

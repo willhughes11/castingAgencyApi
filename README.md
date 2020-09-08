@@ -636,7 +636,9 @@ Example: curl --location --request DELETE 'https://casting-agency-api-wh.herokua
 ```
 
 ## Testing
-Import Postman Collection File and Run Test
+- Download Postman https://www.postman.com/downloads/
+- Import Postman Collection File and Run Test
+- Tokens may be expired
 ```
 casting-agency-api.postman_collection.json
 ```
