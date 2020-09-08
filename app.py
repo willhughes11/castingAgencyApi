@@ -237,7 +237,7 @@ def get_casts():
   
   return jsonify({
     'success': True,
-    'actors': [cast.cast_short() for cast in casts]
+    'actors': [cast.cast_short() for cast in cast]
   })
 
 @app.route('/movie/casts')
@@ -340,4 +340,4 @@ def auth_error(error):
     ),401
 
 if __name__ == '__main__':
-  app.run(host='0.0.0.0', port=8080)
+  app.run(host='0.0.0.0', port=8080, debug=True)
