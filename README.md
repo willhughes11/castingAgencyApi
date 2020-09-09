@@ -129,10 +129,6 @@ curl --location --request GET 'https://casting-agency-api-wh.herokuapp.com/movie
         {
             "id": 1,
             "title": "Black Panther"
-        },
-        {
-            "id": 100000,
-            "title": "Will Hughes: The Movie II"
         }
     ],
     "success": true
